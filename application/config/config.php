@@ -36,7 +36,7 @@ else
   $config['base_url'] .= str_replace(basename($_SERVER['ORIG_SCRIPT_NAME']),"",$_SERVER['ORIG_SCRIPT_NAME']);
 }*/
 
-$config['base_url'] = "https://farmacia-upel-app.herokuapp.com/";
+$config['base_url'] = "https://farmacia-upel.herokuapp.com/";
 
 /*
 |--------------------------------------------------------------------------
