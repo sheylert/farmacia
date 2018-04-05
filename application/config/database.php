@@ -73,7 +73,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+
+
  $db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'ec2-174-129-206-173.compute-1.amazonaws.com',
+
+	'username' => 'djgtbguljgnrdi',
+
+	'password' => '4d68266552e127f55ab9f2a98209c2c86cf2af559dffa51c36f1ec7b73e24db4',
+	
+	'database' => 'd5qu3ctgvthi12',
+        //'database' => 'DIGITAL',
+	'dbdriver' => 'postgre',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+
+ $db['default1'] = array(
 	'dsn'	=> '',
 	'hostname' => '127.0.0.1',
 	'username' => 'root',
