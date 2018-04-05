@@ -143,7 +143,7 @@ class Productomodel extends CI_Model {
 
        $db_admin->select('e.*, t.nombre as producto, t.descripcion as descripcion');
        $db_admin->from('entregaproducto as e');
-       $db_admin->join('productos as t','t.id = .e.producto_id');
+       $db_admin->join('productos as t','t.id = e.producto_id');
        $db_admin->where('e.entrega_id',$id);
       
       return $db_admin->get()->result();
@@ -163,7 +163,7 @@ class Productomodel extends CI_Model {
         t.cedula as cedula, b.nombres as nombreb, b.apellidos as apellidob,
         b.cedula as cedulab');
        $db_admin->from('entregados as e');
-       $db_admin->join('titulares as t','t.id = .e.titulare_id');
+       $db_admin->join('titulares as t','t.id = e.titulare_id');
         $db_admin->join('beneficiarios as b','b.id = e.beneficiario_id');
        $db_admin->where('e.id',$id);
       
