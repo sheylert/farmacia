@@ -125,7 +125,7 @@ class Productomodel extends CI_Model {
        $db_admin->select('e.id as id, e.fecha as fecha, t.nombres as nombre, t.apellidos as apellido,
         t.cedula as cedula');
        $db_admin->from('entregados as e');
-       $db_admin->join('titulares as t','t.id = .e.titulare_id');
+       $db_admin->join('titulares as t','t.id = e.titulare_id');
        $db_admin->where('e.id',$id);
       
 
