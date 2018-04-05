@@ -33,7 +33,7 @@ class Productomodel extends CI_Model {
         t.cedula as cedula, b.nombres as nombreb, b.apellidos as apellidob,
         b.cedula as cedulab, e.beneficiario_id as beneficiario_id');
        $db_admin->from('entregados as e');
-       $db_admin->join('titulares as t','t.id = .e.titulare_id');
+       $db_admin->join('titulares as t','t.id = e.titulare_id');
         $db_admin->join('beneficiarios as b','b.id = e.beneficiario_id', 'left');
       
       
