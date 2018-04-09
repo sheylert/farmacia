@@ -27,7 +27,7 @@ class Usuariomodel extends CI_Model {
             $db_admin->close();
             
             $this->session->set_flashdata('type','danger');
-          $this->session->set_flashdata('message','Sus credenciales son Incorrectas');
+            $this->session->set_flashdata('message','Sus credenciales son Incorrectas');
           redirect(base_url() . 'index.php/login', 'refresh');
         }
     }

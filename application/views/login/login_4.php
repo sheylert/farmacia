@@ -9,7 +9,7 @@
 	</header>
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100 p-t-190 p-b-30">
+			<div class="wrap-login100 p-t-10 p-b-30">
 				
 				 <form action="<?=base_url();?>index.php/login/logueo" class="login100-form validate-form" method="post">	
 					<div class="login100-form-avatar">

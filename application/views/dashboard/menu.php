@@ -133,8 +133,16 @@
 								   <b class="arrow"></b>
 								   </li>
 							   </ul> 
-
 							</li>
+
+							<li>
+							<a href="<?php echo base_url().'index.php/Reportes/plantilla';?>">
+								<i class="menu-icon fa fa-book"></i>
+								<span class="menu-text"> Reportes </span>
+							</a>
+
+							<b class="arrow"></b>
+						</li>
 
 						<?php } ?>
 
@@ -199,7 +207,7 @@
 
 
 								<li>
-							<a href="<?php echo base_url().'index.php/';?>">
+							<a href="<?php echo base_url().'index.php/Reportes/plantilla';?>">
 								<i class="menu-icon fa fa-book"></i>
 								<span class="menu-text"> Reportes </span>
 							</a>

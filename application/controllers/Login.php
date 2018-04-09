@@ -20,6 +20,10 @@ class Login extends CI_Controller {
         'logo' => '',
 	     ];
 
+        $this->load->view('login/header');
+        
+       $this->session->set_userdata($datos);
+
 		    $this->load->view('login/login_4',$datos);
 
         $this->load->view('login/footer');

@@ -17,16 +17,13 @@
 </html>
 
 <script>
-	$(function(){
+	$(function($){
 		
 		let message = '<?= $this->session->flashdata("message") ?>'
 
 		if(message)
 		{
-			console.log(message)
-			toastr.error(message, 'Error!',{
-				hideMethod: 'fadeOut',
-			})
+			toastr.error(message, 'Error!')
 		}
 			
 	})

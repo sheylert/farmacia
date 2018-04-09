@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 
 
- $db['default'] = array(
+ /*$db['defaul1'] = array(
 	'dsn'	=> '',
 	'hostname' => 'ec2-174-129-206-173.compute-1.amazonaws.com',
 
@@ -99,10 +99,10 @@ $query_builder = TRUE;
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE 
-);
+);*/
 
 
- $db['default1'] = array(
+ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => '127.0.0.1',
 	'username' => 'root',
